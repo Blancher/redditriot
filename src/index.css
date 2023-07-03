@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand';
+  background: linear-gradient(rgb(250, 232, 232), rgb(208, 154, 154));
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+  animation: load;
+  animation-duration: .25s;
+  transition: .25s;
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#header {
+  font-family: monospace;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#header:hover {
+  font-family: monospace;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+header h1 {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  background: linear-gradient(rgb(125, 1, 1), rgb(242, 43, 43));
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 5px solid white;
+  box-shadow: 0 5px 5px black;
+}
+
+#search {
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px black;
+  font-size: 20px;
+}
+
+#search:hover {
+  width: 300px;
+}
+
+hr {
+  width: 80%;
+}
+
+#subreddits {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  border: 1px solid white;
+  padding: 0px 5px;
+  border-top: none;
+  border-radius: 10px;
+}
+
+.active {
+  font-size: 20px;
+}
+
+.title {
+  margin: 50px;
+  text-decoration: underline;
+}
+
+.media {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0 5px 5px black;
+  border: 5px solid white;
+}
+
+.postcard {
+  background: linear-gradient(rgb(125, 1, 1), rgb(242, 43, 43));
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 0 5px 5px black;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.postcard:hover {
+  width: 320px;
+  height: 320px;
+}
+
+h5 {
+  position: absolute;
+  bottom: -15px;
+}
+
+.cardsub {
+  left: 10px;
+}
+
+.numcoms {
+  right: 10px;
+}
+
+.user {
+  position: absolute;
+  top: -10px;
+  text-align: center;
+  width: 280px;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: center;
+  width: 270px;
+  margin: 30px auto;
+  box-shadow: 0 5px 5px black;
+}
+
+.overflow {
+  max-height: 65px;
+  overflow: auto;
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+embed {
+  margin: 40px auto;
+  display: block;
+}
+
+.id {
+  width: 70%;
+  max-height: 1000px;
+  margin: 20px auto;
+}
+
+.id:hover {
+  width: 70%;
+}
+
+.id img {
+  width: 30%;
+  height: 55%;
+}
+
+.id .user {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.id h4 {
+  width: 100%;
+}
+
+.commentFlow {
+  max-height: 230px;
+  overflow: auto;
+}
